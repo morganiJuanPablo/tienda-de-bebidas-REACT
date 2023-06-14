@@ -3,7 +3,7 @@ import BeerList from "./BeerList";
 
 function App() {
   return (
-    <h1>Este es la</h1>
+    <h1>Este es la APP</h1>
   );
 }
 
