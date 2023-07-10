@@ -1,5 +1,5 @@
 
-import Home from "./Home";
+import Home from "./itemListPremiados";
 
 const HomeContainer = ({sumar}) => {
 

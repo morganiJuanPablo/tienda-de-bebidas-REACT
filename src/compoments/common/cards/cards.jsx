@@ -7,7 +7,7 @@ const Cards = (/* {item} */) => {
         <div className={Styles.contenedorIconos}>
           <div className={Styles.icono}>
             <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1688405598/ProyectoReactCoder/Iconos/IconoPresentacion_pvpwrw.svg"
+              src="https://res-console.cloudinary.com/dqykftyy6/thumbnails/transform/v1/image/upload/Y19zY2FsZSxoXzQ0LHdfMjA=/v1688405598/UHJveWVjdG9SZWFjdENvZGVyL0ljb25vcy9JY29ub1ByZXNlbnRhY2lvbl9wdnB3cnc=/template_primary"
               alt="Presentación"
             />
           </div>
