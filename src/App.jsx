@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom" ///Indican que a p
 import NavbarContainer from "./compoments/layouts/navbar/NavbarContainer";
 import PremiadosContainer from "./compoments/pages/premiados/PremiadosContainer";
 import HomeContainer from "./compoments/pages/home/HomeContainer";
+import Cards from "./compoments/common/cards/cards";
 
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
     <Routes>
 
       <Route path="" element={<NavbarContainer />}> {/* Al ser una ruta padre se reciben los hijos como children pero en realidad con React Routes son Outlet*/}
+                             
         <Route path="/" element={<HomeContainer />} />
+        <Route path="/" element={<Cards />} />
         <Route path="/cart" /* Asi le decimos que estamos iniciando la ruta raíz */ element={ <h1>AOOOOLO</h1> } /* En element pueden ir etiquetas o bien ya los componentes armados *//>
         <Route path="/premiados" /* Asi le decimos que estamos iniciando la ruta raíz */ element={ <PremiadosContainer />} /* En element pueden ir etiquetas o bien ya los componentes armados *//>
        
@@ -19,8 +22,9 @@ function App() {
 
       <Route path="*" element = {<h1>NOT FOUND</h1>}/>
     </Routes>
+    
 </BrowserRouter>
-
+ 
 );
 };
 

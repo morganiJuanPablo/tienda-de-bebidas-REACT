@@ -16,7 +16,7 @@ const Cards = (/* {item} */) => {
 
           <div className={Styles.icono}>
             <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1688133484/ProyectoReactCoder/Iconos/IconoVarietal_lhfsua.svg"
+              src="https://res-console.cloudinary.com/dqykftyy6/thumbnails/transform/v1/image/upload//v1688405598/UHJveWVjdG9SZWFjdENvZGVyL0ljb25vcy9JY29ub1ByZXNlbnRhY2lvbl9wdnB3cnc=/drilldown"
               alt="Varietal"
             />
           </div>
