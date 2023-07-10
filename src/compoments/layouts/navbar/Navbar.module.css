@@ -1,6 +1,6 @@
 .contenedorNavBar {
   background-color: #180b1d;  
-  height: 15vh; 
+  height: 25rem; 
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,93 @@
+.contenedorCard {
+  width: 33rem;
+  height: 53.5rem;
+  border: solid 1.5px #f8b56d;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  background-color: transparent;
+  transition:.3s ease-out;
+}
+.contenedorCard:hover{
+  border: solid .5px #ffd7ac;
+}
+.contenedorIconosFoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.PhotoProduct {
+  height: 40rem;
+  padding: 1rem;
+  display: flex;
+}
+.contenedorIconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: start;
+  width: 3.7rem; 
+  margin: 1rem 0 1rem 3rem; 
+}
+.detallesIcono{
+  font-size: 1.6rem;
+  font-family: 'Poppins Regular';
+  margin-bottom: 1.2rem;
+
+}
+.contenedorPieCard{
+    background-color: #180b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 10.5rem;  
+      
+}
+.nombreBebida{
+  font-size: 1.8rem;
+  font-family: 'Poppins';
+  color: white;
+  margin-left: 3rem;
+}
+.contenedorBtnsCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.precio{
+  font-size: 3.7rem;
+  font-family: 'Poppins';
+  color: white;
+}
+.btnAñadir{
+  width: 9rem;
+  height: 3.7rem;
+  background-color: #f8b56d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition:.3s ease-in;
+  font-size: 2rem;
+  font-family: 'Poppins Medium';
+  border-radius: .5rem;
+}
+.btnAñadir:hover{
+  background-color:#e9973f;
+}
+
+.btnItemDetail{
+  background-color: transparent;
+  color:#f8b56d;
+  font-size: 2rem;
+  font-family: 'Poppins Medium';
+  border-style: none;
+  cursor: pointer;
+  transition:.4s ease-in;
+}
+.btnItemDetail:hover{
+  color:rgb(250, 231, 212); 
+}

@@ -1,6 +1,7 @@
 import NavbarContainer from "./compoments/layouts/navbar/NavbarContainer";
 import HomeContainer from "./compoments/pages/home/HomeContainer";
 import { useState } from "react";
+import ItemListContainer from "./compoments/pages/itemList/ItemListContainer";
 
 function App() {
   const [contador, setContador] = useState(0);
@@ -8,11 +9,12 @@ function App() {
     setContador(contador + 1);
   };
   return (
-    <div style={{ backgroundColor: "#180b1d", width: "100%", height: "100vh" }}>
+    <div>
       <NavbarContainer contador={contador} />
       <HomeContainer sumar={sumar} />
+      <ItemListContainer />
     </div>
   );
 }
 
-export default App
+export default App;
