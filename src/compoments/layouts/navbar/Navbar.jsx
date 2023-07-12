@@ -3,6 +3,7 @@ import CartWidget from "../../common/cart-widget/CartWidget";
 import { Box, Grid } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 const Navbar = ({ contador }) => {
   return (
     <div>

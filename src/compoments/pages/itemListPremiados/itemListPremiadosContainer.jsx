@@ -1,11 +1,13 @@
+import Cards from "../../common/cards/cards";
+import ItemListPremiados from "./itemListPremiados";
 
-import Home from "./itemListPremiados";
 
-const HomeContainer = ({sumar}) => {
+const ItemListPremiadosContainer = () => {
 
-  return (
-  
-  <Home sumar={sumar} />
+  return (<>
+  <ItemListPremiados/>
+  <Cards />
+  </> 
   );
 };
-export default HomeContainer
+export default ItemListPremiadosContainer

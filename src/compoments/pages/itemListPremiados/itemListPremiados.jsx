@@ -1,16 +1,13 @@
 
-import Styles from "./Home.module.css"
-
-
-const Home = ({sumar}) => {
+const ItemListPremiados = () => {
 
   return (
-    <div className= {Styles.fondoHome}> 
-      <button onClick={sumar} className= {Styles.btnAcumulador}>AÑADIR AL CARRITO</button>     
+    <div> 
+       
     </div>
   )
 }
 
-export default Home
+export default ItemListPremiados
 
 
