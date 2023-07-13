@@ -23,7 +23,7 @@ const ItemDetail = ({ product }) => {
             <button className={styles.btnAñadir}>Añadir</button>
             <button className={styles.btnIrCarrito}>Ir al carrito</button>
           </div>
-          <div className={styles.contenedorIconos}>
+          <div className={styles.contenedor2Iconos}>
             <div>
               <img
                 className={styles.icono}
@@ -32,7 +32,7 @@ const ItemDetail = ({ product }) => {
               />
             </div>
 
-            <p className={styles.detallesIcono}>hfghfghfgh</p>
+            <p className={styles.detallesIcono}>{product.formato}</p>
 
             <div>
               <img
@@ -42,7 +42,7 @@ const ItemDetail = ({ product }) => {
               />
             </div>
 
-            <p className={styles.detallesIcono}>sfsdfsdfsdf</p>
+            <p className={styles.detallesIcono}>{product.varietal}</p>
 
             <div>
               <img
@@ -52,7 +52,7 @@ const ItemDetail = ({ product }) => {
               />
             </div>
 
-            <p className={styles.detallesIcono}>sdfsdfsdf</p>
+            <p className={styles.detallesIcono}>{product.origen}</p>
 
             <div>
               <img
@@ -61,7 +61,7 @@ const ItemDetail = ({ product }) => {
                 alt="Graduación"
               />
             </div>
-            <p className={styles.detallesIcono}>sdasdasd</p>
+            <p className={styles.detallesIcono}>{product.graduación}</p>
           </div>
         </div>
       </div>
