@@ -1,61 +1,63 @@
+import { Link } from "@mui/material";
 import Styles from "./Cards.module.css";
 
-const Cards = (/* {item} */) => {
+const Cards = ({ item }) => {
   return (
     <div className={Styles.contenedorCard}>
       <div className={Styles.contenedorIconosFoto}>
         <div className={Styles.contenedorIconos}>
           <div>
             <img
-              src="https://res-console.cloudinary.com/dqykftyy6/thumbnails/transform/v1/image/upload/Y19zY2FsZSxoXzQ1/v1688405598/UHJveWVjdG9SZWFjdENvZGVyL0ljb25vcy9JY29ub1ByZXNlbnRhY2lvbl9wdnB3cnc=/template_primary"
+              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-02_migynq.png"
               alt="Presentación"
             />
           </div>
 
-          <p className={Styles.detallesIcono}>750ml</p>
+          <p className={Styles.detallesIcono}>{item.formato}</p>
 
           <div>
             <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/c_scale,w_28/v1688133484/ProyectoReactCoder/Iconos/IconoVarietal_lhfsua.svg"
+              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-03_yrdaal.png"
               alt="Varietal"
             />
           </div>
 
-          <p className={Styles.detallesIcono}>Garnacha</p>
+          <p className={Styles.detallesIcono}>{item.varietal}</p>
 
           <div>
             <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1688133484/ProyectoReactCoder/Iconos/IconoOrigen_cppj4h.svg"
+              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-04_wl8wmj.png"
               alt="Origen"
             />
           </div>
 
-          <p className={Styles.detallesIcono}>España</p>
+          <p className={Styles.detallesIcono}>{item.origen}</p>
 
           <div>
             <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1688407210/ProyectoReactCoder/Iconos/IconoGraduacion_u3dmfo.svg"
+              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250886/ProyectoReactCoder/IconsIremDetail/Icons-01_uuphhk.png"
               alt="Graduación"
             />
           </div>
-          <p className={Styles.detallesIcono}>14%</p>
+          <p className={Styles.detallesIcono}>{item.graduación}</p>
         </div>
         <div className={Styles.PhotoProduct}>
-          <img
-            src="https://res.cloudinary.com/dqykftyy6/image/upload/v1687971138/ProyectoReactCoder/Premiados/vino-blanco-enate-chardonnay-f-barrica-2021_x3egjp.jpg"
-            alt=""
-          />
+          <img src={item.img} />
         </div>
       </div>
 
       <div className={Styles.contenedorPieCard}>
         <div className={Styles.nombreBebida}>
-          <p>Señorío de Nevada 2021</p>
+          <p>{item.tittle}</p>
         </div>
         <div className={Styles.contenedorBtnsCard}>
-          <p className={Styles.precio}>8 €</p>
+          <p className={Styles.precio}>
+            <b>{item.price}</b>€
+          </p>
           <button className={Styles.btnAñadir}>Añadir</button>
-          <button className={Styles.btnItemDetail}>+info</button>
+          <Link to={`/itemDetail/${item.id}`}>
+            <button className={Styles.btnItemDetail}>+info</button>
+          </Link>
         </div>
       </div>
     </div>

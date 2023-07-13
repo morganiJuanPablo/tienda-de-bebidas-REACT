@@ -3,13 +3,12 @@
   height: 53.5rem;
   border: solid 1.5px #f8b56d;
   padding: 1rem;
-  margin-bottom: 5rem;
-  margin-left: 5rem;
   background-color: transparent;
   transition:.3s ease-out;
 }
 .contenedorCard:hover{
   border: solid .5px #ffd7ac;
+  scale: 97%;
 }
 .contenedorIconosFoto {
   display: flex;
@@ -25,17 +24,19 @@
 .contenedorIconos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  justify-items: start;
   width: 3.7rem; 
-  margin: 1rem 0 1rem 3rem; 
+  margin: 1rem 0 1rem 3rem;
+  justify-content: space-between; 
 }
 .detallesIcono{
   font-size: 1.6rem;
   font-family: 'Poppins Regular';
   margin-bottom: 1.2rem;
-
 }
+.icono{
+  scale: 70%;
+}
+
 .contenedorPieCard{
     background-color: #180b1d;
     display: flex;

@@ -1,0 +1,13 @@
+.padreContenedorItems{
+    display: flex;    
+    justify-content: center;
+}
+.contenedorItems {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5rem;
+  align-content: center;
+  gap: 3.7rem;
+  margin-left: 7.4rem;
+}

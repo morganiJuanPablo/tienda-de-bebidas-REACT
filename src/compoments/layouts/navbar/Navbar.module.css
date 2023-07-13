@@ -1,27 +1,36 @@
+.padre{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #180b1d; 
+}
+
 .contenedorNavBar {
-  background-color: #180b1d;  
-  height: 15vh; 
+   
+  height: 32rem; 
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
+  width: 60%;
+ 
 }
 .navBarEstilos {
   list-style: none;
-  color: white;
   font-family: "Open Sans";
   font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-  padding-top: 2rem;
-  margin-right: 5rem;
+  padding-top: 2rem;  
+  margin-top: 5rem;
+  color: white;
 }
-.contenedorLogoNavBar{  
-  padding-top: 1rem;
-  margin-left: 5rem;
+.navBarEstilos a {
+  text-decoration: none;
+  color: white;
 }
+
 .logoNavBar {
   width: 20rem;
+  margin-top: 5rem;
 }
