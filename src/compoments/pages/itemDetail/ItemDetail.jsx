@@ -3,35 +3,36 @@ import styles from "./ItemDetail.module.css";
 
 const ItemDetail = ({ product, agregarCarrito }) => {
   return (
-    <>
-      <div className={styles.contenedorPadre}>
-        <div className={styles.contenedor}>
-          <div className={styles.contenedorImg}>
-            <img src={product.img} />
+    <div className={styles.contenedorPadre}>
+      <div className={styles.contenedor}>
+        <div className={styles.contenedorImg}>
+          <img src={product.img} />
+        </div>
+        <div className={styles.contenedorInfo}>
+          <div>
+            <h2 className={styles.nombreProducto}>{product.tittle}</h2>
+            <p className={styles.detalleProducto}>{product.description}</p>
           </div>
-          <div className={styles.contenedorInfo}>
+          <div className={styles.precioProducto}>
+            <p>
+              <b>{product.price}</b>€
+            </p>
+          </div>
+          <div className={styles.logicaCarrito}>
+            <Contador />
+            <button className={styles.btnAñadir}>Añadir</button>
+            <button className={styles.btnIrCarrito}>Ir al carrito</button>
+          </div>
+          <div className={styles.contenedorIconos}>
             <div>
-              <h2 className={styles.nombreProducto}>{product.tittle}</h2>
-              <p className={styles.detalleProducto}>{product.description}</p>
-            </div>
-            <div className={styles.precioProducto}>
-              <p>
-                <b>{product.price}</b>€
-              </p>
+              <img
+                className={styles.icono}
+                src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-02_migynq.png"
+                alt="Presentación"
+              />
             </div>
 
-            <Contador agregarCarrito={agregarCarrito} />
-
-            <div className={styles.contenedorIconos}>
-              <div>
-                <img
-                  className={styles.icono}
-                  src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-02_migynq.png"
-                  alt="Presentación"
-                />
-              </div>
-
-              <p className={styles.detallesIcono}>{product.formato}</p>
+            <p className={styles.detallesIcono}>hfghfghfgh</p>
 
               <div>
                 <img
@@ -41,7 +42,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                 />
               </div>
 
-              <p className={styles.detallesIcono}>{product.varietal}</p>
+            <p className={styles.detallesIcono}>sfsdfsdfsdf</p>
 
               <div>
                 <img
@@ -51,17 +52,16 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                 />
               </div>
 
-              <p className={styles.detallesIcono}>{product.origen}</p>
+            <p className={styles.detallesIcono}>sdfsdfsdf</p>
 
-              <div>
-                <img
-                  className={styles.icono}
-                  src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250886/ProyectoReactCoder/IconsIremDetail/Icons-01_uuphhk.png"
-                  alt="Graduación"
-                />
-              </div>
-              <p className={styles.detallesIcono}>{product.graduación}</p>
+            <div>
+              <img
+                className={styles.icono}
+                src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250886/ProyectoReactCoder/IconsIremDetail/Icons-01_uuphhk.png"
+                alt="Graduación"
+              />
             </div>
+            <p className={styles.detallesIcono}>sdasdasd</p>
           </div>
         </div>
       </div>

@@ -40,14 +40,13 @@
   font-size: 5.5rem;
   color: #180b1d;
 }
-.contenedorIconos {
+.contenedor2Iconos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 47rem;
-  height: 6rem;
+  flex-direction: row;  
+  align-items: center;  
   gap: 1rem;
+  margin-top: 5rem;
+  width: 100%;    
 }
 .contenedorIconos {
   display: flex;
