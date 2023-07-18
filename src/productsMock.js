@@ -50,7 +50,7 @@ export const products = [
     description:
       "Vino Blanco Enate Gewürztraminer 2022 de la Bodega Enate con D.O. Somontano. Se utiliza la variedad de uva Gewurztraminer de viñedos propios que le aporta diferenciación y notas de sabor a miel y flores.",
     category: "premiados",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687971138/ProyectoReactCoder/Premiados/vino-blanco-enate-gewuerztraminer-2022_b3r8mw.jpg",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689603825/ProyectoReactCoder/Premiados/vino-blanco-enate-gewuerztraminer-2022_b3r8mw_xenc7z.jpg",
     formato: "750ml",
     varietal: "Gewurztraminer",
     origen: "Alemania",
@@ -211,7 +211,7 @@ export const products = [
     description:
       "Vino tinto Abadía de San Quirce Crianza de D.O. Ribera del Duero. Elaborado con Tempranillo, el crianza de Bodegas Abadía de San Quirce.",
     category: "VinosTintos",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687972804/ProyectoReactCoder/VinosTintos/vino-tinto-abadia-de-san-quirce-crianza-2018_ivk7uf.jpg",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689604728/ProyectoReactCoder/VinosTintos/01_bpukof.jpg",
 
     formato: "750ml",
     varietal: "Tempranillo",
@@ -258,7 +258,7 @@ export const products = [
     description:
       "Vino Tinto Vinos del Paseante El Pispa 2019 con D.O. Montsant. Elaborado con uvas garnacha. Es un vino joven y sabroso de Bodegas Vinos del Paseante.",
     category: "VinosTintos",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687972803/ProyectoReactCoder/VinosTintos/vinos-del-paseante-el-pispa-2019_jemx13.png",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689604728/ProyectoReactCoder/VinosTintos/03_frn2e7.jpg",
 
     formato: "750ml",
     varietal: "Garnacha",
@@ -274,7 +274,7 @@ export const products = [
     description:
       "Vino Tinto Vinos del Paseante La Escucha 2021 con D.O. Bierzo. Elaborado con uvas Mencía. Es un vino fresco, con intenso aroma y taninos sedosos procedente de Bodegas Vinos del Paseante.",
     category: "VinosTintos",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687972804/ProyectoReactCoder/VinosTintos/vinos-del-paseante-la-escucha-2021_shlx7p.jpg",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689604728/ProyectoReactCoder/VinosTintos/02_qzjvlj.jpg",
 
     formato: "750ml",
     varietal: "Merlot",
@@ -384,7 +384,7 @@ export const products = [
     description:
       "Vino Blanco Vinos del Paseante La Charla 2022 con D.O. Rueda. Elaborado con uvas Verdejo y Sauvignon Blanc. Es un vino blanco de Bodegas Vinos del Paseante que armoniza con todo tipo de comidas.",
     category: "VinosBlancos",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687975527/ProyectoReactCoder/VinosBlancos/vinos-del-paseante-la-charla-2022_znvdqb.jpg",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689605354/ProyectoReactCoder/VinosBlancos/04_o2be5q.jpg",
     formato: "750ml",
     varietal: "Rueda",
     origen: "Portugal",
@@ -518,7 +518,7 @@ export const products = [
     description:
       "Vino Blanco Circe Verdejo 2021 con D.O. Rueda. Elaborado con tipo de uva Verdejo de viñas viejas vendimiadas a mano. Se trata de un vino Joven de la Bodega Avelino Vegas.",
     category: "VinosBlancos",
-    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1687975528/ProyectoReactCoder/VinosBlancos/vino-blanco-circe-verdejo-2021_isruyg.jpg",
+    img: "https://res.cloudinary.com/dqykftyy6/image/upload/v1689605826/ProyectoReactCoder/VinosBlancos/05_no4uvg.jpg",
     formato: "750ml",
     varietal: "Verdejo",
     origen: "Italia",

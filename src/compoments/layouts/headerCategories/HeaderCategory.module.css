@@ -5,9 +5,12 @@
 .banner {
   width: 100%;
   height: 37rem;
-  background-image: url("https://res.cloudinary.com/dqykftyy6/image/upload/v1689145796/ProyectoReactCoder/BannersImg/group-peoeple-drinking-whiskey_t9ihve.jpg");
+  background-color: #f8b56d;
   background-size: cover;
   background-position: center;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10rem;
 }
 .contenedorTitulo{
   width: 100%;

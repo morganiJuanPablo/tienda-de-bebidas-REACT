@@ -1,0 +1,64 @@
+.contenedorMiniCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.miniCard {
+  width: 60%;
+  height: 20.5rem;
+  background-color: aquamarine;
+}
+.contenedorInfo p {
+  font-family: "Poppins";
+  font-size: 1.7rem;
+}
+.nombrePrecio {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.nombrePrecio p {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.7rem;
+  gap: 1rem;
+}
+
+.nombre {
+  font-family: "Poppins";
+  color: #f8b56d;
+}
+.precio {
+  font-family: "Poppins";
+  color: #170d1c;
+}
+.contenedorBtnes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.btnMasInfo b {
+  color: #f8b56d;
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnDeleteProduct {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.imgMini {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+}

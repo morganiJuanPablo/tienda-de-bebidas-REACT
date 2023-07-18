@@ -13,6 +13,18 @@ const ItemList = ({ items }) => {
           ))}
         </section>
       </div>
+      <div className={styles.contenedorBanner}>
+        <div className={styles.contenidoBanner}>
+          <p style={{ fontFamily: "Poppins", fontSize: "12rem" }}>
+            <b>10%</b>OFF
+          </p>
+          <p style={{ fontFamily: "Poppins", fontSize: "1.8rem" }}>
+            Si tu compra supera los 30€. Revisa los términos y condiciones.
+            Comienza a disfrutar de este beneficio desde hoy hasta lo que quede
+            de este 2023.
+          </p>
+        </div>
+      </div>
     </>
   );
 };

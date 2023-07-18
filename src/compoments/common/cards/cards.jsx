@@ -1,5 +1,6 @@
 import { Link } from "@mui/material";
 import Styles from "./Cards.module.css";
+import { Padding } from "@mui/icons-material";
 
 const Cards = ({ item }) => {
   return (
@@ -16,6 +17,7 @@ const Cards = ({ item }) => {
           <p className={Styles.detallesIcono}>{item.formato}</p>
 
           <div>
+            <hr style={{ marginBottom: "2rem" }} />
             <img
               src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689250699/ProyectoReactCoder/IconsIremDetail/Icons-03_yrdaal.png"
               alt="Varietal"
@@ -23,6 +25,7 @@ const Cards = ({ item }) => {
           </div>
 
           <p className={Styles.detallesIcono}>{item.varietal}</p>
+          <hr style={{ marginBottom: "2rem" }} />
 
           <div>
             <img
@@ -32,6 +35,7 @@ const Cards = ({ item }) => {
           </div>
 
           <p className={Styles.detallesIcono}>{item.origen}</p>
+          <hr style={{ marginBottom: "2rem" }} />
 
           <div>
             <img

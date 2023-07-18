@@ -1,6 +1,5 @@
 import styles from "./Navbar.module.css";
 import CartWidget from "../../common/cart-widget/CartWidget";
-import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -39,9 +38,6 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-      <div>
-        <Outlet />
-      </div>
     </>
   );
 };

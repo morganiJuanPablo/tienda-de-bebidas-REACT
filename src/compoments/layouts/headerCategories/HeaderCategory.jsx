@@ -5,10 +5,13 @@ const HeaderCategory = () => {
     <>
     <div>
       <div className={styles.contenedorHeader}>
-        <div className={styles.banner} />
+        <div className={styles.banner}>
+        ***IMAGEN REPRESENTATIVA CATEGORIA***
+        </div>
+        
       </div>
       <div className={styles.contenedorTitulo}>
-        <h2>VINOS TINTOS</h2>
+        <h2>***TITULO CATEGORIA***</h2>
       </div>
     </div>
     </>

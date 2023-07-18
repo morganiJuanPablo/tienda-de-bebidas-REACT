@@ -1,34 +1,54 @@
-.padre{
+.padre {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #180b1d; 
+  background-color: #180b1d;
 }
 
 .contenedorNavBar {
-   
-  height: 32rem; 
+  height: 32rem;
   display: flex;
   justify-content: space-between;
   width: 60%;
- 
 }
 .navBarEstilos {
   list-style: none;
-  font-family: "Open Sans";
+  font-family: "Poppins Medium";
   font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-  padding-top: 2rem;  
+  padding-top: 2rem;
   margin-top: 5rem;
   color: white;
 }
+
+
 .navBarEstilos a {
   text-decoration: none;
   color: white;
+/*   position: relative; */
 }
+
+/* .navBarEstilos a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2.3rem;
+  width: 0;
+  height: 2px;
+  background-color: #f8b56d;
+  transition: width 0.37s ease-in-out;
+}
+
+.navBarEstilos a:hover::after {
+  width: 100%;
+}
+
+.navbar a:active::after {
+  width: 100%;
+} */
 
 .logoNavBar {
   width: 20rem;

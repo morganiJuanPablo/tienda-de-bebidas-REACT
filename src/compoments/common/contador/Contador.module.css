@@ -17,11 +17,48 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  
-  }
+}
 .contador p {
-    font-size: 2.3rem;
-    font-family: "Poppins Medium";
-    color: #f8b56d;
+  font-size: 2.3rem;
+  font-family: "Poppins Medium";
+  color: #f8b56d;
+}
 
+.logicaCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 42rem;
+  height: 3rem;
+  gap: 2rem;
+}
+.btnAñadir {
+  width: 9rem;
+  height: 3.7rem;
+  background-color: #f8b56d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  border-radius: 0.5rem;
+}
+.btnAñadir:hover {
+  background-color: #e9973f;
+}
+.btnIrCarrito {
+  width: 17rem;
+  height: 3.7rem;
+  background-color: #180b1d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  border-radius: 0.5rem;
+}
+.btnIrCarrito:hover {
+  background-color: #40015c;
 }
