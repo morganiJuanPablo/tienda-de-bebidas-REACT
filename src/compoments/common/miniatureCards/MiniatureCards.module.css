@@ -6,8 +6,20 @@
 }
 .miniCard {
   width: 60%;
-  height: 20.5rem;
-  background-color: aquamarine;
+  height: 20.5rem;  
+  padding: 1rem;
+  border-bottom: solid 2px #e9973f;
+  border-top: solid 2px #e9973f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 .contenedorInfo p {
   font-family: "Poppins";
@@ -41,7 +53,7 @@
 }
 .btnMasInfo b {
   color: #f8b56d;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Poppins";
   cursor: pointer;
   text-decoration: none;
@@ -54,11 +66,25 @@
   background-color: transparent;
   border: none;
   font-family: "Poppins Medium";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  gap: .5rem;
 }
-.imgMini {
-  width: 100%;
-  height: auto; 
-  overflow: hidden;
+.imgMini{  
+  height: 18rem;
+}
+.imgMini img{  
+  height: 100%;
+}
+.contenedorContadorPrecioAcc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.PrecioAcc {
+ font-family: "Poppins";
+ font-size: 4rem;
+ padding-left: 1rem;
+ border-left: solid 2px #e9973f;
 }

@@ -1,0 +1,27 @@
+.contador {
+    width: 10rem;
+    height: 3.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #180b1d;
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+  .contador button {
+    font-size: 2.5rem;
+    font-family: "Poppins Medium";
+    color: #180b1d;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .contador p {
+    font-size: 2.3rem;
+    font-family: "Poppins Medium";
+    color: #f8b56d;
+  }
+  
+
