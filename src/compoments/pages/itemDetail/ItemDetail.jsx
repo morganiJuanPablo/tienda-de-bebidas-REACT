@@ -20,11 +20,9 @@ const ItemDetail = ({ product, agregarCarrito }) => {
               </p>
             </div>
             <div className={styles.logicaCarrito}>
-              <Contador />
-              <button className={styles.btnAñadir}>Añadir</button>
-              <button className={styles.btnIrCarrito}>Ir al carrito</button>
+              <Contador agregarCarrito={agregarCarrito}/>           
             </div>
-            <div className={styles.contenedorIconos}>
+            <div className={styles.contenedor2Iconos}>
               <div>
                 <img
                   className={styles.icono}
@@ -65,7 +63,8 @@ const ItemDetail = ({ product, agregarCarrito }) => {
               <p className={styles.detallesIcono}>sdasdasd</p>
             </div>
           </div>
-        
+          </div>
+      </div>
         <div className={styles.contenedorBannerEnvios}>
           <div className={styles.contenidoBannerEnvios}>
             <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689623981/ProyectoReactCoder/Footer/truckBannerEnvios-01_oarao9.png" />
@@ -79,8 +78,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
             </p>
           </div>
         </div>
-      </div>
-      </div>
+
     </>
   );
 };
