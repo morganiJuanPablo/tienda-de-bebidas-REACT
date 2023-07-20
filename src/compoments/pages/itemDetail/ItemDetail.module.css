@@ -1,14 +1,12 @@
 .contenedorPadre {
   width: 100%;
   display: flex;
- 
   justify-content: center;
 }
 .contenedor {
   margin-top: 5rem;
   padding: 0 12rem 0 12rem;
   width: 60%;
-  height: 80rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,10 +19,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 50rem;
   padding: 4rem 0 4rem 0;
   border-bottom: solid 2px #e9973f;
   border-top: solid 2px #e9973f;
+  width: 50rem;
 }
 .nombreProducto {
   font-family: "Poppins Medium";
@@ -43,27 +41,20 @@
 }
 .contenedor2Iconos {
   display: flex;
-  flex-direction: row;  
-  align-items: center;  
+  flex-direction: row;
+  align-items: center;
   gap: 1rem;
   margin-top: 5rem;
-  width: 100%;    
+  width: 50rem;
 }
-.contenedorIconos {
-  display: flex;
-  flex-flow: row wrap;  
-  align-items: center;
-  width: 50rem;  
-  margin-top: 2rem;
-  
-}
+
 .detallesIcono {
   font-size: 1.6rem;
-  font-family: "Poppins Regular";  
+  font-family: "Poppins Regular";
   margin-right: 1rem;
 }
-.contenedorBannerEnvios{
-  margin-top: 5rem;
+.contenedorBannerEnvios {
+  margin-top: 7rem;
   width: 100%;
   background-color: #e9973f;
   display: flex;
@@ -73,21 +64,20 @@
   gap: 3rem;
   padding: 2rem;
 }
-.contenidoBannerEnvios{
+.contenidoBannerEnvios {
   width: 60%;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  
 }
-.envioGratisTittle{
+.envioGratisTittle {
   font-family: "Poppins";
   font-size: 8rem;
   color: white;
 }
-.envioGratisDescription{
+.envioGratisDescription {
   width: 40rem;
   font-family: "Poppins";
   font-size: 1.5rem;

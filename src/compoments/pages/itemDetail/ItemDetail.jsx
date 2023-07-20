@@ -20,11 +20,9 @@ const ItemDetail = ({ product, agregarCarrito }) => {
               </p>
             </div>
             <div className={styles.logicaCarrito}>
-              <Contador />
-              <button className={styles.btnAñadir}>Añadir</button>
-              <button className={styles.btnIrCarrito}>Ir al carrito</button>
+              <Contador agregarCarrito={agregarCarrito} />
             </div>
-            <div className={styles.contenedorIconos}>
+            <div className={styles.contenedor2Iconos}>
               <div>
                 <img
                   className={styles.icono}
@@ -33,7 +31,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                 />
               </div>
 
-              <p className={styles.detallesIcono}>hfghfghfgh</p>
+              <p className={styles.detallesIcono}>{product.formato}</p>
 
               <div>
                 <img
@@ -43,7 +41,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                 />
               </div>
 
-              <p className={styles.detallesIcono}>sfsdfsdfsdf</p>
+              <p className={styles.detallesIcono}>{product.varietal}</p>
 
               <div>
                 <img
@@ -53,7 +51,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                 />
               </div>
 
-              <p className={styles.detallesIcono}>sdfsdfsdf</p>
+              <p className={styles.detallesIcono}>{product.origen}</p>
 
               <div>
                 <img
@@ -62,24 +60,23 @@ const ItemDetail = ({ product, agregarCarrito }) => {
                   alt="Graduación"
                 />
               </div>
-              <p className={styles.detallesIcono}>sdasdasd</p>
+              <p className={styles.detallesIcono}>{product.graduación}</p>
             </div>
-          </div>
-        
-        <div className={styles.contenedorBannerEnvios}>
-          <div className={styles.contenidoBannerEnvios}>
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689623981/ProyectoReactCoder/Footer/truckBannerEnvios-01_oarao9.png" />
-            <p className={styles.envioGratisTittle}>
-              <b>envío</b>gratis
-            </p>
-            <p className={styles.envioGratisDescription}>
-              Si vives en Madrid. Revisa los términos y condiciones. Comienza a
-              disfrutar de este beneficio desde hoy hasta lo que quede de este
-              2023.
-            </p>
           </div>
         </div>
       </div>
+      <div className={styles.contenedorBannerEnvios}>
+        <div className={styles.contenidoBannerEnvios}>
+          <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689623981/ProyectoReactCoder/Footer/truckBannerEnvios-01_oarao9.png" />
+          <p className={styles.envioGratisTittle}>
+            <b>envío</b>gratis
+          </p>
+          <p className={styles.envioGratisDescription}>
+            Si vives en Madrid. Revisa los términos y condiciones. Comienza a
+            disfrutar de este beneficio desde hoy hasta lo que quede de este
+            2023.
+          </p>
+        </div>
       </div>
     </>
   );

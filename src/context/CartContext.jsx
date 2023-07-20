@@ -20,7 +20,6 @@ const CartContextComponent = ({ children }) => {
           return elemento;
         }
       });
-
       setCart(newArr);
     } else {
       setCart([...cart, product]);
