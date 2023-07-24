@@ -1,7 +1,7 @@
 import Contador from "../../common/contador/Contador";
 import styles from "./ItemDetail.module.css";
 
-const ItemDetail = ({ product, agregarCarrito }) => {
+const ItemDetail = ({ product, agregarCarrito,actualQuantityCart=1 }) => {
   return (
     <>
       <div className={styles.contenedorPadre}>
@@ -20,7 +20,7 @@ const ItemDetail = ({ product, agregarCarrito }) => {
               </p>
             </div>
             <div className={styles.logicaCarrito}>
-              <Contador agregarCarrito={agregarCarrito} />
+              <Contador agregarCarrito={agregarCarrito} actualQuantityCart={actualQuantityCart} />
             </div>
             <div className={styles.contenedor2Iconos}>
               <div>

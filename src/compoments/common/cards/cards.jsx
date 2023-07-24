@@ -1,8 +1,15 @@
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import Styles from "./Cards.module.css";
-import { Padding } from "@mui/icons-material";
+import { useContext } from "react";
+import { CartContext } from "../../../context/cartContext";
 
-const Cards = ({ item }) => {
+
+const Cards = ({ item, actuallyQuantity }) => {  
+
+  const { Add1fromCards } = useContext(CartContext);
+  let addFromCards = Add1fromCards(actuallyQuantity);
+
+
   return (
     <div className={Styles.contenedorCard}>
       <div className={Styles.contenedorIconosFoto}>
@@ -58,7 +65,7 @@ const Cards = ({ item }) => {
           <p className={Styles.precio}>
             <b>{item.price}</b>€
           </p>
-          <button className={Styles.btnAñadir}>Añadir</button>
+          <button className={Styles.btnAñadir} onClick={()=>addFromCards}>Añadir</button>
           <Link to={`/itemDetail/${item.id}`}>
             <button className={Styles.btnItemDetail}>+info</button>
           </Link>

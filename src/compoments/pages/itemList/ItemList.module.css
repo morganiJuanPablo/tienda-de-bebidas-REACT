@@ -1,6 +1,6 @@
-.padreContenedorItems{
-    display: flex;    
-    justify-content: center;
+.padreContenedorItems {
+  display: flex;
+  justify-content: center;
 }
 .contenedorItems {
   width: 60%;
@@ -11,21 +11,22 @@
   gap: 3.7rem;
   margin-left: 7.4rem;
 }
-.contenedorBanner{
+.contenedorBanner {
   width: 100%;
   margin-top: 5rem;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #f8b56d;
   padding: 2rem;
 }
-.contenidoBanner{
+.contenidoBanner {
   width: 60%;
   display: flex;
   flex-direction: row;
-  
+
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
+

@@ -26,12 +26,11 @@
 }
 .logosFooter img {
   margin-right: 1rem;
-  transition: .37s ease-in-out;
+  transition: 0.37s ease-in-out;
   cursor: pointer;
 }
-.logosFooter img:hover{
+.logosFooter img:hover {
   scale: 88%;
-  
 }
 .payPal {
   display: flex;

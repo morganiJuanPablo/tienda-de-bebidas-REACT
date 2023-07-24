@@ -7,12 +7,13 @@ import { CartContext } from "../../../context/cartContext";
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
 
-  const {addToCart} = useContext (CartContext)
+  const { addToCart, getQuantityById } = useContext(CartContext);
   let { id } = useParams();
+  let actualQuantityCart = getQuantityById(id);
 
   useEffect(() => {
     let promesa = new Promise((resolve, reject) => {
-      let productSelected = products.find((product) => product.id === Number(id))
+      let productSelected = products.find((product) => product.id === +id);
       resolve(productSelected);
     });
 
@@ -24,10 +25,16 @@ const ItemDetailContainer = () => {
       ...product,
       quantity: cantidad,
     };
-    addToCart(data)
-  }
+    addToCart(data);
+  };
 
-  return <ItemDetail product={product} agregarCarrito={agregarCarrito} />;
+  return (
+    <ItemDetail
+      product={product}
+      agregarCarrito={agregarCarrito}
+      actualQuantityCart={actualQuantityCart}
+    />
+  );
 };
 
 export default ItemDetailContainer;

@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,11 +7,11 @@ const Footer = () => {
       <div className={styles.contenedorInfoFooter}>
         <div className={styles.logosYtexto}>
           <div className={styles.logosFooter}>
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689613464/ProyectoReactCoder/Footer/logoFooter_wkuzd5.png" />
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/GoogleFooter-01_ukqxgk.png" />
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/faceBookFooter-01_f7u4su.png" />
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/InstagramFooter-01_uwljkx.png" />
-            <img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/WhatsappFooter-01_r9wvqb.png" />
+          <Link to="/"><img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689613464/ProyectoReactCoder/Footer/logoFooter_wkuzd5.png" /></Link>
+            <a href="https://www.google.com/" target="_blank"><img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/GoogleFooter-01_ukqxgk.png" /></a>
+            <a href="https://es-es.facebook.com/" target="_blank"><img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/faceBookFooter-01_f7u4su.png" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/InstagramFooter-01_uwljkx.png" /></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689531741/ProyectoReactCoder/Footer/WhatsappFooter-01_r9wvqb.png" /></a>
           </div>
           <p className={styles.textoFooter}>
             winery.com © 2023 - Todos los derechos reservados{" "}

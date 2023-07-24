@@ -14,10 +14,10 @@ const CartContextComponent = ({ children }) => {
         if (product.id === elemento.id) {
           return {
             ...elemento,
-            quantity: elemento.quantity + product.quantity,
+            quantity: product.quantity + 1,
           };
         } else {
-          return elemento;
+          return { ...elemento, quantity: 1,}
         }
       });
       setCart(newArr);
@@ -35,11 +35,40 @@ const CartContextComponent = ({ children }) => {
     setCart(newArr);
   };
 
+  const getTotalQuantity=()=>{
+    let total = cart.reduce((acc,elemento)=>{
+      return acc + elemento.quantity
+    },0)
+    return total;
+  }
+
+  const totalPrice =()=>{
+    let total = cart.reduce((acc,elemento)=>{
+      return acc + (elemento.price * elemento.quantity)
+    },0)
+    return total;
+  }
+
+  const getQuantityById = (id) =>{
+    let producto=cart.find ((elemento) => elemento.id === +id)
+    /* return producto ? producto.quantity : undefined */
+    return producto?.quantity
+  }
+
+  const Add1fromCards = () =>{
+    let producto = cart.find ((elemento) => elemento.quantity)
+    return producto+1
+  }
+
   let data = {
     cart,
     addToCart,
     clearCart,
     deleteById,
+    getTotalQuantity,
+    totalPrice,
+    getQuantityById,
+    Add1fromCards
   };
 
 

@@ -1,8 +1,9 @@
 import useCounter from "../../utils/useCounter/useCounter";
 import styles from "./Contador.module.css"
+import { Link } from "react-router-dom";
+const Contador = ({agregarCarrito,actualQuantityCart}) => {
 
-const Contador = ({agregarCarrito}) => {
-const { contador, sumar, restar} = useCounter(1); 
+const {contador, sumar, restar} = useCounter(actualQuantityCart); 
 
 
 
@@ -15,7 +16,7 @@ const { contador, sumar, restar} = useCounter(1);
       <button onClick={sumar}><b>+</b></button>
     </div>
     <button className={styles.btnAñadir} onClick={()=> agregarCarrito(contador)}>Añadir</button>
-    <button className={styles.btnIrCarrito}>Ir al carrito</button>
+    <Link to="/cart"><button className={styles.btnIrCarrito}>Ir al carrito</button></Link>
     <div/>
     </div>
   );

@@ -4,11 +4,11 @@
   border: solid 1.5px #f8b56d;
   padding: 1rem;
   background-color: transparent;
-  transition: 0.37s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .contenedorCard:hover {
-  border: solid 0.5px #ffd7ac;
-  scale: 103%;
+  border: solid 0.5px #f5dabd;
+  scale: 102%;
 }
 .contenedorIconosFoto {
   display: flex;

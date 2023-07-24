@@ -20,8 +20,8 @@ export const routes = [
     Element: ItemDetailContainer,
   },
   {
-    id:"cart",
-    path:"/cart",
+    id: "cart",
+    path: "/cart",
     Element: MiniatureCards,
-  }
+  },
 ];
