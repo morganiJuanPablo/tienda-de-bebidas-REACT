@@ -1,14 +1,16 @@
 .contenedorCard {
   width: 33rem;
-  height: 55.5rem;
+  height: 54.5rem;
   border: solid 1.5px #f8b56d;
   padding: 1rem;
   background-color: transparent;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .contenedorCard:hover {
-  border: solid 0.5px #f5dabd;
-  scale: 102%;
+  border: solid 0.5px #fde7cf;
+  transform: translate(0, -0.83rem);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .contenedorIconosFoto {
   display: flex;
@@ -23,7 +25,7 @@
 }
 .contenedorIconos {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   padding-bottom: 1.5rem;
   padding-top: 1rem;
   margin-left: 3rem;
@@ -31,22 +33,22 @@
 .detallesIcono {
   font-size: 1.6rem;
   font-family: "Poppins Regular";
-  margin-bottom: 1.2rem;
+  margin-bottom: .5rem;
 }
 .icono {
   scale: 70%;
 }
 
 .contenedorPieCard {
-  background-color: #180b1d;
+  background-color: #180b1e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 10.5rem;
+  height: 12rem;  
 }
 .nombreBebida {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-family: "Poppins";
   color: white;
   margin-left: 3rem;

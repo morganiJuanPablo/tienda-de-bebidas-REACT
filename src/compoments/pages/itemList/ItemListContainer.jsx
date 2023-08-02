@@ -1,8 +1,10 @@
 import ItemList from "./ItemList";
 import { useState, useEffect } from "react";
-import { products } from "../../../productsMock";
+import { dataBase } from "../../../Firebase";
 import { headersCategory } from "../../../headers";
 import { useParams } from "react-router-dom";
+//Firebase tiene sus propios métodos
+import { getDocs, collection, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -10,34 +12,21 @@ const ItemListContainer = () => {
   const { categoryName } = useParams();
 
   useEffect(() => {
-    let productosFiltrados;
-    if (categoryName === undefined) {
-      productosFiltrados = products.filter(
-        (elemento) => elemento.category === "premiados"
-      );
+    let totalProducts = collection(dataBase, "products");
+    let consulta;
+    if (!categoryName) {
+      consulta = query(totalProducts, where("category", "==", "premiados"));
     } else {
-      productosFiltrados = products.filter(
-        (elemento) => elemento.category === categoryName
-      );
+      consulta = query(totalProducts, where("category", "==", categoryName));
     }
-    const tarea = new Promise((resolve, reject) => {
-      resolve(productosFiltrados);
+    //Siempre se accede a la propiedad docs que siempre está en el objeto que nos devuelve la promesa
+    getDocs(consulta).then((resp) => {
+      let nuevoArreglo = resp.docs.map((products) => {
+        //.data() permite desencriptar la info que viene rara
+        return { ...products.data(), id: products.id };
+      });
+      setItems(nuevoArreglo);
     });
-    tarea
-      .then((respuesta) => setItems(respuesta))
-      .catch((error) => console.log(error));
-
-    let headerCategory;
-    headerCategory = headersCategory.filter(
-      (encabezado) => encabezado.category === categoryName
-    );
-
-    const tarea2 = new Promise((resolve, reject) => {
-      resolve(headerCategory);
-    });
-    tarea2
-      .then((respuesta) => setHeader(respuesta))
-      .catch((error) => console.log(error));
   }, [categoryName]);
 
   return <ItemList items={items} header={header} />;

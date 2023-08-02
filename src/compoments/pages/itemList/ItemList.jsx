@@ -4,7 +4,6 @@ import styles from "./ItemList.module.css";
 import { Skeleton } from "@mui/material";
 
 const ItemList = ({ items, header }) => {
-
   let cantidadSkeleton = [1, 2, 3, 4, 5, 6];
 
   return (
@@ -19,7 +18,7 @@ const ItemList = ({ items, header }) => {
           {items.length > 0
             ? items.map((item) => <Cards key={item.id} item={item} />)
             : cantidadSkeleton.map(() => (
-                <Skeleton variant="rectangular" width={330} height={555} />
+                <Skeleton variant="rectangular" width={330} height={545} />
               ))}
         </section>
       </div>

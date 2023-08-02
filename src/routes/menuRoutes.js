@@ -1,6 +1,6 @@
 import ItemListContainer from "../compoments/pages/itemList/ItemListContainer";
 import ItemDetailContainer from "../compoments/pages/itemDetail/ItemDetailContainer";
-import MiniatureCards from "../compoments/common/miniatureCards/MiniatureCards";
+import CartContainer from "../compoments/pages/cart/CartContainer";
 
 export const routes = [
   {
@@ -22,6 +22,6 @@ export const routes = [
   {
     id: "cart",
     path: "/cart",
-    Element: MiniatureCards,
+    Element: CartContainer,
   },
 ];

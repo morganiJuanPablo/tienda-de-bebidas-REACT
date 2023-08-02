@@ -1,14 +1,21 @@
-import { useContext } from "react";
-import { CartContext } from "../../../context/cartContext";
-
+import MiniatureCards from "../../common/miniatureCards/MiniatureCards";
+import styles from "./Cart.module.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { cart } = useContext(CartContext);
   return (
+    <>
+      <div className={styles.contenedorMensaje}>
+        <p>:/</p>
+        <p>El carrito está vacío</p>
+        <Link to="/">
+          <button>Ir al inicio</button>
+        </Link>
+      </div>
+    </>
     //Siempre React solicita una key a la hora de mapear elementos. Se trata de una propiedad-valor que resulte único para cada producto.
-    <div key={id}> 
-    </div>
-  )
-}
+    /*  <MiniatureCards/> */
+  );
+};
 
-export default Cart
+export default Cart;

@@ -1,7 +1,7 @@
 import { Link } from "@mui/material";
 import styles from "./MiniatureCards.module.css";
 import CancelIcon from "@mui/icons-material/Cancel";
-import ContadorMinicard from "../../common/contadorMiniCard/ContadorMiniCard";
+import Contador from "../contador/Contador";
 
 const MiniatureCards = () => {
   return (
@@ -37,7 +37,7 @@ const MiniatureCards = () => {
           </div>
         </div>
         <div className={styles.contenedorContadorPrecioAcc}>
-          <ContadorMinicard />
+          <Contador />
           <p className={styles.PrecioAcc}>
             <b>36</b>€
           </p>
