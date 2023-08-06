@@ -7,13 +7,13 @@ import { CartContext } from "../../../context/CartContext";
 const CartWidget = () => {
   const { getTotalQuantity } = useContext(CartContext);
 
-  let total = getTotalQuantity(); /// Es buena práctica guardar en una variable la ejecución o el llamado a la función.
+  let cantidadTotal = getTotalQuantity(); /// Es buena práctica guardar en una variable la ejecución o el llamado a la función.
 
   return (
     <>
       <Link to="/cart">
         <Badge
-          badgeContent={total}
+          badgeContent={cantidadTotal}
           sx={{
             "& .MuiBadge-badge": {
               fontSize: "1.4rem",
@@ -23,6 +23,7 @@ const CartWidget = () => {
               marginLeft: "10rem",
             },
           }}
+          showZero
         >
           <ShoppingCartOutlinedIcon
             color="white"

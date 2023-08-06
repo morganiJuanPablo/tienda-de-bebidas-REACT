@@ -3,6 +3,7 @@ import { routes } from "./menuRoutes";
 import Layout from "../compoments/layouts/Layout";
 import LegalCheckContainer from "../compoments/pages/legalCheck/LegalCheckContainer";
 import { useState } from "react";
+import NotFound from "../compoments/pages/notFound/NotFound";
 
 const AppRouter = () => {
   const [legalPage, setLegalPage] = useState(true);
@@ -21,8 +22,7 @@ const AppRouter = () => {
               <Route key={id} path={path} element={<Element />} />
             ))}
           </Route>
-
-          <Route path="*" element={<h1>NOT FOUND 404</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       )}
     </>

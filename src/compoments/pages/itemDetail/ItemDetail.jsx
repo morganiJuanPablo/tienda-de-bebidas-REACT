@@ -2,7 +2,7 @@ import Contador from "../../common/contador/Contador";
 import styles from "./ItemDetail.module.css";
 import CircularProgress from "@mui/material/CircularProgress";
 
-const ItemDetail = ({ product, agregarCarrito, actualQuantityCart = 1, stock }) => {
+const ItemDetail = ({ product, agregarCarrito, actualQuantityCart, stock }) => {
   return (
     <>
       <div className={styles.contenedorPadre}>

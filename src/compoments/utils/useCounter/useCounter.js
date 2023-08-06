@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useCounter = (initial = 0, max) => {
+const useCounter = (initial, max) => {
   const [contador, setContador] = useState(initial);
 
   const sumar = () => {

@@ -1,45 +1,48 @@
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import styles from "./MiniatureCards.module.css";
-import CancelIcon from "@mui/icons-material/Cancel";
-import Contador from "../contador/Contador";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 
-const MiniatureCards = () => {
+const MiniatureCards = ({ elemento, deleteById }) => {
   return (
     <div className={styles.contenedorMiniCard}>
       <div className={styles.miniCard}>
         <div className={styles.imgInfo}>
           <div className={styles.imgMini}>
-            <img
-              src="https://res.cloudinary.com/dqykftyy6/image/upload/v1689605354/ProyectoReactCoder/VinosBlancos/04_o2be5q.jpg"
-              alt=""
-            />
+            <img src={elemento.img} alt="Imagen del producto" />
           </div>
           <div className={styles.contenedorInfo}>
-            <p>Botella de 720ml</p>
+            <p>
+              Botella de {elemento.formato}.
+              <b> Unidades: {elemento.quantity}</b>
+            </p>
             <div className={styles.nombrePrecio}>
               <p className={styles.nombre}>
-                <b>Ron Barceló Signio</b>
+                <b>{elemento.tittle}</b>
               </p>
               <p className={styles.precio}>
-                <b>12</b>€
+                <b>{elemento.price}</b>€
               </p>
             </div>
 
             <div className={styles.contenedorBtnes}>
-              <Link className={styles.btnMasInfo}>
-                <b>+info</b>
+              <Link to={`/itemDetail/${elemento.id}`}>
+                <b>Volver al detalle</b>
               </Link>
-              <button className={styles.btnDeleteProduct}>
-                <CancelIcon sx={{ fontSize: "large" }} />
+              <button
+                className={styles.btnDeleteProduct}
+                onClick={() => deleteById(elemento.id)}
+              >
+                <DeleteForeverIcon sx={{ fontSize: "large" }} />
                 <p>Eliminar</p>
               </button>
             </div>
           </div>
         </div>
         <div className={styles.contenedorContadorPrecioAcc}>
-          <Contador />
+          {/* <Contador /> */}
+          <p className={styles.total}>Subtotal</p>
           <p className={styles.PrecioAcc}>
-            <b>36</b>€
+            <b>{elemento.price * elemento.quantity}</b>€
           </p>
         </div>
       </div>

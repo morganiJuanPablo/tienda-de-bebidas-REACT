@@ -1,0 +1,24 @@
+.contenedorPieCart {
+  height: 5rem;
+  margin: 5rem auto 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.btnEmptyCart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.total {
+  font-family: "Poppins";
+  font-size: 3.7rem;
+  color: #170d1c;
+}

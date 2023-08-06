@@ -3,7 +3,7 @@
   height: 54.5rem;
   border: solid 1.5px #f8b56d;
   padding: 1rem;
-  background-color: transparent;
+  margin: 1rem auto;
   transition: 0.4s ease-in-out;
 }
 .contenedorCard:hover {

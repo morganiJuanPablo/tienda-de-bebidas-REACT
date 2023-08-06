@@ -4,12 +4,15 @@ import ItemDetail from "./ItemDetail";
 import { CartContext } from "../../../context/CartContext";
 import { dataBase } from "../../../Firebase";
 import { getDoc, collection, doc } from "firebase/firestore";
+import styles from "./ItemDetail.module.css";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
 
-  const { addToCart, getQuantityById } = useContext(CartContext);
   let { id } = useParams();
+
+  const { addToCart, getQuantityById } = useContext(CartContext);
+
   let actualQuantityCart = getQuantityById(id);
 
   useEffect(() => {
@@ -23,8 +26,20 @@ const ItemDetailContainer = () => {
       ...product,
       quantity: cantidad,
     };
-
     addToCart(data);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Añadido al carrito",
+      showConfirmButton: false,
+      timer: 2200,
+      customClass: {
+        container: styles.container,
+        popup: styles.popup,
+        title: styles.title,
+        icon:styles.icon,
+      },
+    });
   };
 
   return (

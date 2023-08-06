@@ -1,0 +1,50 @@
+.popup {
+  width: 30%;
+  height: 27rem;
+  padding: 2rem;
+}
+.confirmbtn {
+  width: 9rem;
+  height: 3.7rem;
+  background-color: #f8b56d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+.confirmbtn:hover {
+  background-color: #e9973f;
+}
+
+.cancelbtn {
+  width: 9rem;
+  height: 3.7rem;
+  background-color: #f8b56d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+.cancelbtn:hover {
+  background-color: #e9973f;
+}
+
+.icon {
+  scale: 150%;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 500;
+  color: #180b1d;
+  text-align: center;
+}

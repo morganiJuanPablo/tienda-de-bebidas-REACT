@@ -1,7 +1,26 @@
-import ModalLegalCheckContainer from "../../common/modalLegalCheck/ModalLegalCheckContainer";
+import React, { useState, useEffect } from "react";
 import styles from "./legalCheck.module.css";
 
-const LegalCheck = ({ legalPage, setLegalPage, modal, setModal }) => {
+const LegalCheck = ({ legalPage, setLegalPage }) => {
+  const [isAdult, setIsAdult] = useState(
+    localStorage.getItem("isAdult") === "true"
+  );
+
+  const handleConfirmation = () => {
+    localStorage.setItem("isAdult", "true");
+    setIsAdult(true);
+    setLegalPage(false);
+  };
+
+  useEffect(() => {
+    if (isAdult) {
+      setLegalPage(false);
+    }
+  }, [isAdult, setLegalPage]);
+
+  if (!legalPage) {
+    return null;
+  }
   return (
     <div className={styles.contenedorPadre}>
       <div className={styles.bienvenidaLegalCheck}>
@@ -10,24 +29,11 @@ const LegalCheck = ({ legalPage, setLegalPage, modal, setModal }) => {
       </div>
       <h2>¿Eres mayor de edad?</h2>
       <div className={styles.botonesLegalCheck}>
-        <button onClick={() => setLegalPage(!legalPage)}>SI</button>
-        <button
-          onClick={() =>
-            Swal.fire({
-              title: "Custom animation with Animate.css",
-              showClass: {
-                popup: "animate__animated animate__fadeInDown",
-              },
-              hideClass: {
-                popup: "animate__animated animate__fadeOutUp",
-              },
-            })
-          }
-        >
-          <a   href="https://www.google.com/" >NO</a>
+        <button onClick={handleConfirmation}>SI</button>
+        <button>
+          <a href="https://www.google.com/">NO</a>
         </button>
       </div>
-      {modal && <ModalLegalCheckContainer />}
     </div>
   );
 };

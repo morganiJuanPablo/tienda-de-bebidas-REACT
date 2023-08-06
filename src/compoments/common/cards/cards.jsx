@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 import Styles from "./Cards.module.css";
-import { useContext } from "react";
-import { CartContext } from "../../../context/cartContext";
 
-
-const Cards = ({ item, actuallyQuantity }) => {  
-
-  const { Add1fromCards } = useContext(CartContext);
-  let addFromCards = Add1fromCards(actuallyQuantity);
-
-
+const Cards = ({ item }) => {
   return (
     <div className={Styles.contenedorCard}>
       <div className={Styles.contenedorIconosFoto}>
@@ -65,7 +57,9 @@ const Cards = ({ item, actuallyQuantity }) => {
           <p className={Styles.precio}>
             <b>{item.price}</b>€
           </p>
-          <button className={Styles.btnAñadir} onClick={()=>addFromCards}>Añadir</button>
+          <button className={Styles.btnAñadir} onClick={()=> sd}>
+            Añadir
+          </button>
           <Link to={`/itemDetail/${item.id}`}>
             <button className={Styles.btnItemDetail}>+info</button>
           </Link>

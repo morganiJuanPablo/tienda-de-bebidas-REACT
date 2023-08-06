@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
 }
-.contenedorMensaje p {
+.messageEmptyCart {
   font-family: "Poppins Medium";
   font-size: 1.8rem;
   color: #180b1e;
@@ -26,4 +26,23 @@
 }
 .contenedorMensaje button:hover {
   background-color: #e9973f;
+}
+.faceEmptyCart {
+  font-size: 6rem;
+  display: inline-block;
+}
+@keyframes rotateAndMove {
+  0% {
+    transform: rotate(0) translate(0, 0);
+    scale: 60%;
+    color: #f8b56d;
+  }
+  100% {
+    transform: rotate(90deg) translate(-5px, 3px);
+    scale: 120%;
+    color: #180b1e;
+  }
+}
+.faceEmptyCart {
+  animation: rotateAndMove .4s  forwards;
 }

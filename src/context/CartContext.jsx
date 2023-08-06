@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import styles from "./CartContext.module.css";
 
 export const CartContext = createContext(); ///Acá creamos el contexto. Se exporta al igual que el componente para que luego se reciba en cada useContext que utilicemos en los distintos componentes.
 
@@ -14,7 +15,7 @@ const CartContextComponent = ({ children }) => {
         if (product.id === elemento.id) {
           return {
             ...elemento,
-            quantity: product.quantity + 1,
+            quantity: product.quantity,
           };
         } else {
           return { ...elemento, quantity: 1 };
@@ -26,13 +27,64 @@ const CartContextComponent = ({ children }) => {
     }
   };
 
+  //FUNCION QUE VACIA EL CARRITO POR COMPLETO
   const clearCart = () => {
-    setCart([]);
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: styles.confirmbtn,
+        cancelButton: styles.cancelbtn,
+        popup: styles.popup,
+        icon: styles.icon,
+        title: styles.title,
+      },
+      buttonsStyling: false,
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "¿Deseas vaciar el carrito?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+        iconColor:"red",
+        reverseButtons: false,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          setCart([]);
+        }
+      });
   };
 
+  //FUNCION QUE ELIMINA LOS PRODUCTOS POR SEPARADO
   const deleteById = (id) => {
-    let newArr = cart.filter((elemento) => elemento.id !== id);
-    setCart(newArr);
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: styles.confirmbtn,
+        cancelButton: styles.cancelbtn,
+        popup: styles.popup,
+        icon: styles.icon,
+        title: styles.title,
+      },
+      buttonsStyling: false,
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "¿Quieres eliminar el producto?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+        reverseButtons: false,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          let newArr = cart.filter((elemento) => elemento.id !== id);
+          setCart(newArr);
+        }
+      });
   };
 
   const getTotalQuantity = () => {
@@ -51,13 +103,26 @@ const CartContextComponent = ({ children }) => {
 
   const getQuantityById = (id) => {
     let producto = cart.find((elemento) => elemento.id === +id);
-    /* return producto ? producto.quantity : undefined */
     return producto?.quantity;
   };
 
-  const Add1fromCards = () => {
-    let producto = cart.find((elemento) => elemento.quantity);
-    return producto + 1;
+  const Add1fromCards = (cantidad) => {
+    let existe = cart.some((elemento) => elemento.id === product.id);
+    if (existe) {
+      let newArr = cart.map((elemento) => {
+        if (product.id === elemento.id) {
+          return {
+            ...elemento,
+            quantity: product.quantity,
+          };
+        } else {
+          return { ...elemento, quantity: 1 };
+        }
+      });
+      setCart(newArr);
+    } else {
+      setCart([...cart, product]);
+    }
   };
 
   let data = {

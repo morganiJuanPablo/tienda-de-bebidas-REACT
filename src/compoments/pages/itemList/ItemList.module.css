@@ -1,15 +1,13 @@
 .padreContenedorItems {
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 .contenedorItems {
   width: 60%;
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: 5rem;
-  align-content: center;
-  gap: 3.7rem;
-  margin-left: 7.4rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  gap: 1.5rem;
+  margin: 8rem auto;
 }
 .contenedorBanner {
   width: 100%;
@@ -29,4 +27,3 @@
   align-items: center;
   gap: 2rem;
 }
-

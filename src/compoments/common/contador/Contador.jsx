@@ -3,8 +3,8 @@ import styles from "./Contador.module.css";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 
-const Contador = ({ agregarCarrito, actualQuantityCart, stock }) => {
-  const { contador, sumar, restar } = useCounter(actualQuantityCart,stock);
+const Contador = ({ agregarCarrito, actualQuantityCart=1, stock }) => {
+  const { contador, sumar, restar } = useCounter(actualQuantityCart, stock);
 
   return (
     <div className={styles.logicaCarrito}>

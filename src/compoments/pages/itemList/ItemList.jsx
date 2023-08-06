@@ -18,10 +18,11 @@ const ItemList = ({ items, header }) => {
           {items.length > 0
             ? items.map((item) => <Cards key={item.id} item={item} />)
             : cantidadSkeleton.map(() => (
-                <Skeleton variant="rectangular" width={330} height={545} />
+                <Skeleton sx={{margin:"1rem auto"}}variant="rectangular" width={330} height={545} />
               ))}
         </section>
       </div>
+
       <div className={styles.contenedorBanner}>
         <div className={styles.contenidoBanner}>
           <p style={{ fontFamily: "Poppins", fontSize: "12rem" }}>

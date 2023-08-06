@@ -1,20 +1,34 @@
 import MiniatureCards from "../../common/miniatureCards/MiniatureCards";
+import PieCart from "../../common/pieCart/PieCart";
 import styles from "./Cart.module.css";
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+const Cart = ({ cart, deleteById }) => {
   return (
     <>
-      <div className={styles.contenedorMensaje}>
-        <p>:/</p>
-        <p>El carrito está vacío</p>
-        <Link to="/">
-          <button>Ir al inicio</button>
-        </Link>
-      </div>
+      {cart.length === 0 ? (
+        <div className={styles.contenedorMensaje}>
+          <p className={styles.faceEmptyCart}>:/</p>
+          <p className={styles.messageEmptyCart}>El carrito está vacío</p>
+          <Link to="/">
+            <button>Ir al inicio</button>
+          </Link>
+        </div>
+      ) : (
+        <>
+          {cart.map((elemento) => {
+            return (
+              <MiniatureCards
+                key={elemento.id}
+                elemento={elemento}
+                deleteById={deleteById}
+              />
+            );
+          })}
+          <PieCart />
+        </>
+      )}
     </>
-    //Siempre React solicita una key a la hora de mapear elementos. Se trata de una propiedad-valor que resulte único para cada producto.
-    /*  <MiniatureCards/> */
   );
 };
 

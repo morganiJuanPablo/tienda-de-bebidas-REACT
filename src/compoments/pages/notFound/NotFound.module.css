@@ -1,0 +1,32 @@
+.notFoundContent {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.notFoundContent > p {
+  font-family: "Poppins";
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.btnInicio > button {
+  width: 20rem;
+  height: 3.7rem;
+  background-color: #f8b56d;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  font-size: 1.8rem;
+  font-family: "Poppins Medium";
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+.btnInicio > button:hover {
+  background-color: #e9973f;
+}

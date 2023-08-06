@@ -1,10 +1,10 @@
 import Cart from "./Cart";
 import { useContext } from "react";
-import { CartContext } from "../../../context/cartContext";
+import { CartContext } from "../../../context/CartContext";
 
 const CartContainer = () => {
-  const { addToCart, getQuantityById, cart } = useContext(CartContext);
-  return <Cart />;
+  const { cart, deleteById } = useContext(CartContext);
+  return <Cart cart={cart} deleteById={deleteById} />;
 };
 
 export default CartContainer;

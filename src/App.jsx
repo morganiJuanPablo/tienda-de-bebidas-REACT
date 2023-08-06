@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
-import CartContextComponent from "./context/cartContext";
+import CartContextComponent from "./context/CartContext";
 import { ThemeProvider } from "@mui/material";
 import { customTheme } from "./themeConfig";
 

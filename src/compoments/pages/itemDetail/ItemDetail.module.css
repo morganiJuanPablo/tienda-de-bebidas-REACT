@@ -93,3 +93,23 @@
   justify-content: center;
   align-items: center;
 }
+.container {
+  width: 100%;
+}
+.popup {
+  width: 20%;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+  height: 15rem;
+  padding: 2rem;
+}
+.title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 500;
+  color: #180b1d;
+  text-align: left;
+}
+.icon {
+  scale: 140%;
+}
