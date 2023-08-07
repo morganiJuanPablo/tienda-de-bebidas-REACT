@@ -14,6 +14,7 @@ const ItemDetailContainer = () => {
   const { addToCart, getQuantityById } = useContext(CartContext);
 
   let actualQuantityCart = getQuantityById(id);
+  console.log(actualQuantityCart);
 
   useEffect(() => {
     let totalRef = collection(dataBase, "products");
@@ -32,12 +33,13 @@ const ItemDetailContainer = () => {
       icon: "success",
       title: "Añadido al carrito",
       showConfirmButton: false,
-      timer: 2200,
+      timer: 2300,
+      padding: "2rem",
       customClass: {
         container: styles.container,
         popup: styles.popup,
         title: styles.title,
-        icon:styles.icon,
+        icon: styles.icon,
       },
     });
   };

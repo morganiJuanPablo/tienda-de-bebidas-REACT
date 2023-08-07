@@ -27,7 +27,6 @@ const CartContextComponent = ({ children }) => {
     }
   };
 
-  //FUNCION QUE VACIA EL CARRITO POR COMPLETO
   const clearCart = () => {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -47,7 +46,7 @@ const CartContextComponent = ({ children }) => {
         showCancelButton: true,
         confirmButtonText: "Si",
         cancelButtonText: "No",
-        iconColor:"red",
+        iconColor: "red",
         reverseButtons: false,
       })
       .then((result) => {
@@ -57,7 +56,6 @@ const CartContextComponent = ({ children }) => {
       });
   };
 
-  //FUNCION QUE ELIMINA LOS PRODUCTOS POR SEPARADO
   const deleteById = (id) => {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {

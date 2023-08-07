@@ -61,7 +61,7 @@ const Cards = ({ item }) => {
             Añadir
           </button>
           <Link to={`/itemDetail/${item.id}`}>
-            <button className={Styles.btnItemDetail}>+info</button>
+            <button className={Styles.btnItemDetail} onClick={() => window.scrollTo({ top: 0 })}>+info</button>
           </Link>
         </div>
       </div>

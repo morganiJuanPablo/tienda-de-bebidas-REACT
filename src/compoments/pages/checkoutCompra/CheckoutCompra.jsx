@@ -1,4 +1,6 @@
 import styles from "./CheckoutCompra.module.css";
+import { Link } from "react-router-dom";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const CheckoutCompra = ({
   cart,
@@ -6,10 +8,9 @@ const CheckoutCompra = ({
   handleSubmit,
   handleChange,
   orderId,
-  setLoading,
-  loading,
+  setBtnComprar,
+  btnComprar,
 }) => {
-  console.log(cart);
   return (
     <section className={styles.containerCheckout}>
       <div className={styles.purchaseDetail}>
@@ -33,33 +34,53 @@ const CheckoutCompra = ({
             <form onSubmit={handleSubmit} className={styles.form}>
               <input
                 type="text"
-                placeholder="ingrese su nombre"
+                placeholder="Ingrese su nombre"
                 name="name"
                 onChange={handleChange}
               />
               <input
                 type="text"
-                placeholder="ingrese su telefono"
+                placeholder="Ingrese su telefono"
                 name="phone"
                 onChange={handleChange}
               />
               <input
                 type="text"
-                placeholder="ingrese su email"
+                placeholder="Ingrese su email"
                 name="email"
                 onChange={handleChange}
               />
+              {btnComprar ? (
+                <button type="submit" onClick={() => setBtnComprar(false)}>
+                  Comprar
+                </button>
+              ) : (
+                <button>
+                  <CircularProgress sx={{ scale: "60%" }} />
+                </button>
+              )}
             </form>
-            {!loading ? (
-              <button type="submit" onClick={() => setLoading(true)}>
-                Comprar
-              </button>
-            ) : (
-              "cargando "
-            )}
           </>
         ) : (
-          <h3>Su numero de compra: {orderId} </h3>
+          <>
+            <section className={styles.purchaseConfirm}>
+              <img
+                src="https://res.cloudinary.com/dqykftyy6/image/upload/v1691303855/wPuschaseConfirm-01_ullmva.png"
+                alt=""
+              />
+              <h3>LA COMPRA FUE UN ÉXITO.</h3>
+              <p>Gracias por confiar en nosotros.</p>
+              <p>
+                <b>¡Salud!</b>
+              </p>
+              <p>
+                <br />
+                Código de resguardo: <br />
+                {orderId}
+              </p>
+              <Link to={"/"}>Ir al inicio</Link>
+            </section>
+          </>
         )}
       </div>
     </section>

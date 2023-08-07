@@ -1,73 +1,57 @@
 .contenedorGeneral {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: auto;
   background-color: #180b1d;
+  padding: 5rem;
 }
 .contenedor {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 70%;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: auto;
+  width: 60%;
 }
 .contenedorNavBar {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.navBarEstilos {
   list-style: none;
   font-family: "Poppins";
   font-size: 1.6rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 5rem;
-  color: white;
 }
-.navBarEstilos a {
+.ul{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.ul a {
   text-decoration: none;
   color: white;
   transition: 0.2s ease-in-out;
 }
-.navBarEstilos a:hover {
+.ul a:hover {
   color: #f8b56d;
 }
 .logoNavBar {
   width: 20rem;
-  margin-top: 5rem;
 }
 
-.btnLogin {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  font-family: "Poppins";
-  font-size: 1.6rem;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-.iconInfo {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  gap: 1rem;
-}
 .contenedorIconosNavBar {
+  width: 60%;
+  margin: 5rem auto 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin: 7rem;
   padding: 2rem 0 2rem 0;
   border-bottom: solid 2px #e9973f;
   border-top: solid 2px #e9973f;
   color: white;
   font-family: "Poppins Medium";
   font-size: 1.5rem;
+}
+.iconInfo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
 }

@@ -13,11 +13,14 @@ const PieCart = () => {
         <DeleteForeverIcon sx={{ fontSize: "2.3rem" }} />
         <p>Vaciar el carrito</p>
       </button>
-      <div className={styles.contTotalComprar}></div>
-      <p className={styles.total}>
-        Total: <b>{total}</b>€
-        <Link to={"/checkoutCompra"}><button>COMPRAR</button></Link>
-      </p>
+      <div className={styles.containerTotalComprar}>
+        <p className={styles.total}>
+          Total: <b>{total}</b>€</p>
+          <Link to={"/checkoutCompra"}>
+            <button className={styles.btnComprar}>COMPRAR</button>
+          </Link>
+        
+      </div>
     </div>
   );
 };

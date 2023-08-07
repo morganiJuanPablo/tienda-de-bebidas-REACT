@@ -19,14 +19,11 @@ const MiniatureCards = ({ elemento, deleteById }) => {
               <p className={styles.nombre}>
                 <b>{elemento.tittle}</b>
               </p>
-              <p className={styles.precio}>
-                <b>{elemento.price}</b>€
-              </p>
             </div>
 
             <div className={styles.contenedorBtnes}>
               <Link to={`/itemDetail/${elemento.id}`}>
-                <b>Volver al detalle</b>
+                <b>+info</b>
               </Link>
               <button
                 className={styles.btnDeleteProduct}

@@ -1,19 +1,18 @@
 .contenedorPadre {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 60%;
+  margin: auto;
 }
 .contenedor {
   margin-top: 5rem;
-  padding: 0 12rem 0 12rem;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 4rem;
 }
 .contenedorImg {
   width: 30rem;
   height: 70rem;
+  margin: auto;
 }
 .contenedorInfo {
   display: flex;
@@ -23,6 +22,7 @@
   border-bottom: solid 2px #e9973f;
   border-top: solid 2px #e9973f;
   width: 50rem;
+  margin: auto;
 }
 .nombreProducto {
   font-family: "Poppins Medium";
@@ -47,30 +47,26 @@
   margin-top: 5rem;
   width: 50rem;
 }
-
 .detallesIcono {
   font-size: 1.6rem;
   font-family: "Poppins Regular";
   margin-right: 1rem;
 }
+
 .contenedorBannerEnvios {
-  margin-top: 7rem;
+  padding: 3rem 0 3rem 0;
   width: 100%;
+  margin-top: 7rem;
   background-color: #e9973f;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
 }
 .contenidoBannerEnvios {
   width: 60%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: auto;
   align-items: center;
-  gap: 2rem;
 }
 .envioGratisTittle {
   font-family: "Poppins";
@@ -78,12 +74,10 @@
   color: white;
 }
 .envioGratisDescription {
-  width: 40rem;
   font-family: "Poppins";
   font-size: 1.5rem;
   color: white;
 }
-
 .contenedorProgress {
   width: 100%;
   height: 75vh;
@@ -93,23 +87,30 @@
   justify-content: center;
   align-items: center;
 }
-.container {
-  width: 100%;
-}
 .popup {
   width: 20%;
-  grid-template-columns: 4fr 8fr;
+  height: 13rem;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  height: 15rem;
-  padding: 2rem;
+  justify-content: center;
 }
 .title {
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 500;
   color: #180b1d;
-  text-align: left;
 }
 .icon {
   scale: 140%;
+  margin: auto;
+}
+@media screen and (max-width: 1500px) {
+  .popup {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .popup {
+    width: 50%;
+  }
 }

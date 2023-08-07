@@ -1,13 +1,14 @@
 import styles from "./HeaderCategory.module.css";
 
 const HeaderCategory = ({ head }) => {
+  console.log(head)
   return (
     <>
       <div className={styles.contenedorBanner}>
         <img src={head.img} />
       </div>
       <div className={styles.contenedorTitulo}>
-        <h2>{head.tittle}</h2>
+        <h3>{head.tittle}</h3>
       </div>
     </>
   );

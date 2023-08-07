@@ -1,7 +1,6 @@
 export const products = [
   //////////////PREMIADOS////////////////////////
   {
-    id: 101,
     tittle: "Viña Alberdi",
     price: 16,
     stock: 5,
@@ -16,7 +15,6 @@ export const products = [
   },
 
   {
-    id: 102,
     tittle: "Pazo de Seoane",
     price: 13,
     stock: 4,
@@ -30,7 +28,6 @@ export const products = [
     graduación: "14%",
   },
   {
-    id: 103,
     tittle: "Lagar de Cervera",
     price: 14,
     stock: 12,
@@ -43,7 +40,6 @@ export const products = [
     graduación: "12%",
   },
   {
-    id: 104,
     tittle: "Enate Gewürztraminer",
     price: 11,
     stock: 7,
@@ -57,7 +53,6 @@ export const products = [
     graduación: "9%",
   },
   {
-    id: 105,
     tittle: "Viña Ardanza",
     price: 25,
     stock: 8,
@@ -72,7 +67,6 @@ export const products = [
   },
 
   {
-    id: 106,
     tittle: "Marqués de Vargas",
     price: 23,
     stock: 4,
@@ -86,7 +80,6 @@ export const products = [
     graduación: "10%",
   },
   {
-    id: 107,
     tittle: "Marqués de Cáceres",
     price: 6,
     stock: 12,
@@ -100,7 +93,6 @@ export const products = [
     graduación: "14%",
   },
   {
-    id: 108,
     tittle: "Áster Crianza",
     price: 18,
     stock: 12,
@@ -114,7 +106,6 @@ export const products = [
     graduación: "10%",
   },
   {
-    id: 109,
     tittle: "Pazo San Mauro",
     price: 16,
     stock: 10,
@@ -128,7 +119,6 @@ export const products = [
     graduación: "11%",
   },
   {
-    id: 110,
     tittle: "Abadía de San Quirce",
     price: 16,
     stock: 10,
@@ -142,7 +132,6 @@ export const products = [
     graduación: "10%",
   },
   {
-    id: 111,
     tittle: "Enate C. 2020",
     price: 7,
     stock: 10,
@@ -156,7 +145,6 @@ export const products = [
     graduación: "10%",
   },
   {
-    id: 112,
     tittle: "Enate Chardonnay F.",
     price: 18,
     stock: 3,
@@ -173,7 +161,6 @@ export const products = [
   ///////////////TINTOS////////////////////////////
 
   {
-    id: 1,
     tittle: "Flores de Callejo 2021",
     price: 9,
     stock: 10,
@@ -188,7 +175,6 @@ export const products = [
     graduación: "14%",
   },
   {
-    id: 2,
     tittle: "Tinto Damana 5 2019",
     price: 8,
     stock: 5,
@@ -204,7 +190,6 @@ export const products = [
   },
 
   {
-    id: 3,
     tittle: "San Quirce Crianza 2018",
     price: 16,
     stock: 4,
@@ -220,7 +205,6 @@ export const products = [
   },
 
   {
-    id: 4,
     tittle: "Enate Merlot 2018",
     price: 24,
     stock: 2,
@@ -236,7 +220,6 @@ export const products = [
   },
 
   {
-    id: 5,
     tittle: "Premium Cuvée",
     price: 11,
     stock: 5,
@@ -251,7 +234,6 @@ export const products = [
   },
 
   {
-    id: 6,
     tittle: "Paseante El Pispa",
     price: 46,
     stock: 8,
@@ -267,7 +249,6 @@ export const products = [
   },
 
   {
-    id: 7,
     tittle: "Paseante La Escucha",
     price: 55,
     stock: 9,
@@ -283,7 +264,6 @@ export const products = [
   },
 
   {
-    id: 8,
     tittle: "Corriente 2020",
     price: 12,
     stock: 3,
@@ -299,7 +279,6 @@ export const products = [
   },
 
   {
-    id: 9,
     tittle: "Dehesa Gago 2020",
     price: 39,
     stock: 1,
@@ -314,7 +293,6 @@ export const products = [
   },
 
   {
-    id: 10,
     tittle: "Laudum Roble 2021",
     price: 70,
     stock: 4,
@@ -330,7 +308,6 @@ export const products = [
   },
 
   {
-    id: 11,
     tittle: "Gazur 2020",
     price: 10,
     stock: 9,
@@ -346,7 +323,6 @@ export const products = [
   },
 
   {
-    id: 12,
     tittle: "Amaya Arzuaga 2020",
     price: 160,
     stock: 5,
@@ -363,7 +339,6 @@ export const products = [
 
   //////////////BLANCOS///////////////////
   {
-    id: 14,
     tittle: "Señorío de Nevada 2021",
     price: 9,
     stock: 25,
@@ -377,7 +352,6 @@ export const products = [
     graduación: "9%",
   },
   {
-    id: 15,
     tittle: "La Charla 2022",
     price: 25,
     stock: 5,
@@ -392,7 +366,6 @@ export const products = [
   },
 
   {
-    id: 17,
     tittle: "Otazu Chardonnay 2021",
     price: 25,
     stock: 3,
@@ -407,7 +380,6 @@ export const products = [
   },
 
   {
-    id: 18,
     tittle: "Basa 2022",
     price: 72,
     stock: 1,
@@ -422,7 +394,6 @@ export const products = [
   },
 
   {
-    id: 19,
     tittle: "Montenovo 2022",
     price: 69,
     stock: 15,
@@ -437,7 +408,6 @@ export const products = [
   },
 
   {
-    id: 20,
     tittle: "Yllera 5.5 Verdejo Frizzante",
     price: 9,
     stock: 3,
@@ -452,7 +422,6 @@ export const products = [
   },
 
   {
-    id: 21,
     tittle: "La Duda 2022",
     price: 95,
     stock: 5,
@@ -466,7 +435,6 @@ export const products = [
   },
 
   {
-    id: 22,
     tittle: "Marina 25 2018",
     price: 42,
     stock: 16,
@@ -481,7 +449,6 @@ export const products = [
   },
 
   {
-    id: 23,
     tittle: "Antea edición limitada",
     price: 18,
     stock: 5,
@@ -496,7 +463,6 @@ export const products = [
   },
 
   {
-    id: 24,
     tittle: "Protos Reserva 2018",
     price: 21,
     stock: 6,
@@ -511,7 +477,6 @@ export const products = [
   },
 
   {
-    id: 25,
     tittle: "Circe Verdejo 2021",
     price: 16,
     stock: 8,
@@ -526,7 +491,6 @@ export const products = [
   },
 
   {
-    id: 26,
     tittle: "Las Moradas 2020",
     price: 45,
     stock: 6,
@@ -543,7 +507,6 @@ export const products = [
   ///////////////DESTILADOS/////////////////////////
 
   {
-    id: 201,
     tittle: "Whisky Glenfiddich 12 años",
     price: 42,
     stock: 6,
@@ -557,7 +520,6 @@ export const products = [
     graduación: "45%",
   },
   {
-    id: 202,
     tittle: "Ron Barceló Signio",
     price: 21,
     stock: 1,
@@ -571,7 +533,6 @@ export const products = [
     graduación: "40%",
   },
   {
-    id: 203,
     tittle: "Ron Barceló Onyx",
     price: 48,
     stock: 5,
@@ -585,7 +546,6 @@ export const products = [
     graduación: "40%",
   },
   {
-    id: 204,
     tittle: "Aguardiente Valdomiño",
     price: 21,
     stock: 3,
@@ -599,7 +559,6 @@ export const products = [
     graduación: "45%",
   },
   {
-    id: 205,
     tittle: "Ron Barceló Blanco",
     price: 16,
     stock: 4,
@@ -613,7 +572,6 @@ export const products = [
     graduación: "30%",
   },
   {
-    id: 206,
     tittle: "Ron Barceló Añejo",
     price: 25,
     stock: 5,
@@ -627,7 +585,6 @@ export const products = [
     graduación: "48%",
   },
   {
-    id: 207,
     tittle: "Grappa Libarna Reserva",
     price: 30,
     stock: 1,
@@ -641,7 +598,6 @@ export const products = [
     graduación: "35%",
   },
   {
-    id: 208,
     tittle: "Ginebra Hendrick's",
     price: 37,
     stock: 5,
@@ -655,7 +611,6 @@ export const products = [
     graduación: "55%",
   },
   {
-    id: 209,
     tittle: "Ginebra Master's",
     price: 58,
     stock: 2,
@@ -669,7 +624,6 @@ export const products = [
     graduación: "58%",
   },
   {
-    id: 210,
     tittle: "Ginebra Green Apple",
     price: 75,
     stock: 3,
@@ -683,7 +637,6 @@ export const products = [
     graduación: "58%",
   },
   {
-    id: 211,
     tittle: "Ginebra Master's Pink",
     price: 26,
     stock: 5,
@@ -697,7 +650,6 @@ export const products = [
     graduación: "58%",
   },
   {
-    id: 212,
     tittle: "Whisky Glenfiddich",
     price: 105,
     stock: 5,

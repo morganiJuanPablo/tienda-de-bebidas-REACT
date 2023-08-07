@@ -1,29 +1,21 @@
 .contenedorFooter {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 4rem;
-}
-.contenedorInfoFooter {
   width: 60%;
-  height: 25rem;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  margin: 5rem auto 0 auto;
+  align-items: start;
+  gap: 3rem;
+  padding: 5rem 0 5rem 0;
 }
-.logosYtexto {
+.left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
   gap: 2rem;
 }
-.payPalyCondiciones {
+.logosFooter {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  gap: 2rem;
 }
 .logosFooter img {
   margin-right: 1rem;
@@ -33,6 +25,22 @@
 .logosFooter img:hover {
   scale: 88%;
 }
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+}
+
+.payPalyCondiciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+}
+
 .payPal {
   display: flex;
   flex-direction: row;
@@ -42,6 +50,7 @@
 .textoFooter {
   font-family: "Poppins";
   font-size: 1.5rem;
+  text-align: right;
 }
 .login a {
   font-family: "Poppins";
@@ -53,4 +62,23 @@
 .loginIcon {
   width: 3rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  .contenedorFooter {
+    width: 60%;
+    height: 25rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 3rem auto 0 auto;
+    align-items: start;
+    gap: 3rem;
+  }
+  .textoFooter {
+    text-align: left;
+  }
+  .rigth {
+    align-items: start;
+  }
 }

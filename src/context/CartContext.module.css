@@ -1,6 +1,6 @@
 .popup {
   width: 30%;
-  height: 27rem;
+  height: 30rem;
   padding: 2rem;
 }
 .confirmbtn {
@@ -19,7 +19,6 @@
 .confirmbtn:hover {
   background-color: #e9973f;
 }
-
 .cancelbtn {
   width: 9rem;
   height: 3.7rem;
@@ -36,15 +35,18 @@
 .cancelbtn:hover {
   background-color: #e9973f;
 }
-
 .icon {
   scale: 150%;
 }
-
 .title {
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 500;
   color: #180b1d;
   text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .popup {
+    width: 50%;
+  }
 }

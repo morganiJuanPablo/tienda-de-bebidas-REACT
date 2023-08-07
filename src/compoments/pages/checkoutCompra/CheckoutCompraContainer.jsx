@@ -13,7 +13,7 @@ import {
 const CheckoutCompraContainer = () => {
   const { cart, totalPrice } = useContext(CartContext);
 
-  const [loading, setLoading] = useState(false);
+  const [btnComprar, setBtnComprar] = useState(true);
 
   const [orderId, setOrderId] = useState("");
 
@@ -23,9 +23,9 @@ const CheckoutCompraContainer = () => {
     email: "",
   });
   let total = totalPrice();
+
   const handleSubmit = (evento) => {
     evento.preventDefault();
-    setLoading(true);
 
     let order = {
       buyer: userData,
@@ -35,22 +35,7 @@ const CheckoutCompraContainer = () => {
     };
 
     let ordersCollections = collection(dataBase, "orders");
-    addDoc(ordersCollections, order)
-      .then((res) => {
-        console.log("orderId obtenido:", res.id);
-        setOrderId(res.id);
-        cart.forEach((elemento) => {
-          updateDoc(doc(dataBase, "products", elemento.id), {
-            stock: elemento.stock - elemento.quantity,
-          });
-        });
-      })
-      .catch((error) => {
-        console.error("Error al agregar el documento:", error);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    addDoc(ordersCollections, order).then((res) => setOrderId(res.id));
 
     cart.forEach((elemento) => {
       updateDoc(doc(dataBase, "products", elemento.id), {
@@ -62,7 +47,6 @@ const CheckoutCompraContainer = () => {
   const handleChange = (evento) => {
     setUserData({ ...userData, [evento.target.name]: evento.target.value });
   };
-
   return (
     <>
       <CheckoutCompra
@@ -71,8 +55,8 @@ const CheckoutCompraContainer = () => {
         handleSubmit={handleSubmit}
         handleChange={handleChange}
         orderId={orderId}
-        loading={loading}
-        setLoading={setLoading}
+        btnComprar={btnComprar}
+        setBtnComprar={setBtnComprar}
       />
     </>
   );

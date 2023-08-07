@@ -1,19 +1,22 @@
 import ItemList from "./ItemList";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { dataBase } from "../../../Firebase";
 import { headersCategory } from "../../../headers";
 import { useParams } from "react-router-dom";
 //Firebase tiene sus propios métodos
 import { getDocs, collection, query, where } from "firebase/firestore";
-import { CartContext } from "../../../context/CartContext";
 
 const ItemListContainer = () => {
- 
+  const onTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const [items, setItems] = useState([]);
   const [header, setHeader] = useState([]);
   const { categoryName } = useParams();
-
- 
 
   useEffect(() => {
     let totalProducts = collection(dataBase, "products");
@@ -31,9 +34,24 @@ const ItemListContainer = () => {
       });
       setItems(nuevoArreglo);
     });
+
+    let headerCategory;
+    headerCategory = headersCategory.filter((encabezado) =>
+      !categoryName
+        ? encabezado.category === "premiados"
+        : encabezado.category === categoryName
+    );
+
+    const tareaHeader = new Promise((resolve, reject) => {
+      resolve(headerCategory);
+    });
+    tareaHeader
+      .then((respuesta) => setHeader(respuesta))
+
+      .catch((error) => console.log(error));
   }, [categoryName]);
 
-  return <ItemList items={items} header={header} />;
+  return <ItemList items={items} header={header} onTop={onTop} />;
 };
 
 export default ItemListContainer;
