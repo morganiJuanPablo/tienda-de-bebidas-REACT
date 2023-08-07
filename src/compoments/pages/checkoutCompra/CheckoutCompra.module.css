@@ -65,13 +65,13 @@
   color: #170d1c;
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 .form > input::placeholder {
   color: #170d1c;
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .form > button {

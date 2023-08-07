@@ -104,24 +104,7 @@ const CartContextComponent = ({ children }) => {
     return producto?.quantity;
   };
 
-  const Add1fromCards = (cantidad) => {
-    let existe = cart.some((elemento) => elemento.id === product.id);
-    if (existe) {
-      let newArr = cart.map((elemento) => {
-        if (product.id === elemento.id) {
-          return {
-            ...elemento,
-            quantity: product.quantity,
-          };
-        } else {
-          return { ...elemento, quantity: 1 };
-        }
-      });
-      setCart(newArr);
-    } else {
-      setCart([...cart, product]);
-    }
-  };
+
 
   let data = {
     cart,
@@ -131,7 +114,7 @@ const CartContextComponent = ({ children }) => {
     getTotalQuantity,
     totalPrice,
     getQuantityById,
-    Add1fromCards,
+    
   };
 
   return (

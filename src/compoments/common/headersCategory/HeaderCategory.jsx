@@ -1,7 +1,6 @@
 import styles from "./HeaderCategory.module.css";
 
 const HeaderCategory = ({ head }) => {
-  console.log(head)
   return (
     <>
       <div className={styles.contenedorBanner}>

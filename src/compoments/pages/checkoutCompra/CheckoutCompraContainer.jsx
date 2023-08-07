@@ -57,6 +57,7 @@ const CheckoutCompraContainer = () => {
         orderId={orderId}
         btnComprar={btnComprar}
         setBtnComprar={setBtnComprar}
+        userData={userData}
       />
     </>
   );

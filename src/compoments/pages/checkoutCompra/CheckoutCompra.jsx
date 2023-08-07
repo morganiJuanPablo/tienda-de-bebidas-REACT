@@ -10,7 +10,15 @@ const CheckoutCompra = ({
   orderId,
   setBtnComprar,
   btnComprar,
+  userData,
 }) => {
+
+  const handleFormSubmit = (event) => {
+    handleSubmit(event); // Ejecuta la función original de envío del formulario
+    setBtnComprar(false); // Deshabilita el botón después del envío
+  };
+
+
   return (
     <section className={styles.containerCheckout}>
       <div className={styles.purchaseDetail}>
@@ -31,27 +39,30 @@ const CheckoutCompra = ({
         {!orderId ? (
           <>
             <h2>Ya casi lo tienes</h2>
-            <form onSubmit={handleSubmit} className={styles.form}>
+            <form onSubmit={handleFormSubmit} className={styles.form}>
               <input
                 type="text"
                 placeholder="Ingrese su nombre"
                 name="name"
                 onChange={handleChange}
+                required="Este campo es obligatorio"
               />
               <input
                 type="text"
                 placeholder="Ingrese su telefono"
                 name="phone"
                 onChange={handleChange}
+                required="Este campo es obligatorio"
               />
               <input
                 type="text"
                 placeholder="Ingrese su email"
                 name="email"
                 onChange={handleChange}
+                required="Este campo es obligatorio"
               />
               {btnComprar ? (
-                <button type="submit" onClick={() => setBtnComprar(false)}>
+                <button type="submit">
                   Comprar
                 </button>
               ) : (

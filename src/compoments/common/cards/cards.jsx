@@ -57,11 +57,14 @@ const Cards = ({ item }) => {
           <p className={Styles.precio}>
             <b>{item.price}</b>€
           </p>
-          <button className={Styles.btnAñadir} onClick={()=> sd}>
-            Añadir
-          </button>
+
           <Link to={`/itemDetail/${item.id}`}>
-            <button className={Styles.btnItemDetail} onClick={() => window.scrollTo({ top: 0 })}>+info</button>
+            <button
+              className={Styles.btnItemDetail}
+              onClick={() => window.scrollTo({ top: 0 })}
+            >
+              +info
+            </button>
           </Link>
         </div>
       </div>
