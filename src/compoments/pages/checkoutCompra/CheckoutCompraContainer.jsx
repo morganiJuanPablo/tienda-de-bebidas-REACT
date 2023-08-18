@@ -11,7 +11,7 @@ import {
 } from "firebase/firestore";
 
 const CheckoutCompraContainer = () => {
-  const { cart, totalPrice } = useContext(CartContext);
+  const { cart, totalPrice, clearCartAfterPurchase } = useContext(CartContext);
 
   const [btnComprar, setBtnComprar] = useState(true);
 
@@ -57,7 +57,7 @@ const CheckoutCompraContainer = () => {
         orderId={orderId}
         btnComprar={btnComprar}
         setBtnComprar={setBtnComprar}
-        userData={userData}
+        clearCartAfterPurchase={clearCartAfterPurchase}
       />
     </>
   );

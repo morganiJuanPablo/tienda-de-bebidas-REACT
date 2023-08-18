@@ -10,12 +10,13 @@ const CheckoutCompra = ({
   orderId,
   setBtnComprar,
   btnComprar,
-  userData,
+  clearCartAfterPurchase,
 }) => {
 
   const handleFormSubmit = (event) => {
-    handleSubmit(event); // Ejecuta la función original de envío del formulario
-    setBtnComprar(false); // Deshabilita el botón después del envío
+    handleSubmit(event); 
+    setBtnComprar(false);
+    clearCartAfterPurchase()
   };
 
 

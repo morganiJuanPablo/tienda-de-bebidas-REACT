@@ -26,7 +26,9 @@ const CartContextComponent = ({ children }) => {
       setCart([...cart, product]);
     }
   };
-
+  const clearCartAfterPurchase = () => {
+    setCart([]);
+  };
   const clearCart = () => {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -104,8 +106,6 @@ const CartContextComponent = ({ children }) => {
     return producto?.quantity;
   };
 
-
-
   let data = {
     cart,
     addToCart,
@@ -114,7 +114,7 @@ const CartContextComponent = ({ children }) => {
     getTotalQuantity,
     totalPrice,
     getQuantityById,
-    
+    clearCartAfterPurchase,
   };
 
   return (
