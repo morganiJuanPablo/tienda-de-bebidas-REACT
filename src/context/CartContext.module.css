@@ -12,7 +12,7 @@
   cursor: pointer;
   transition: 0.4s ease-in;
   font-size: 2rem;
-  font-family: "Poppins Medium";
+  font-family: "Poppins";
   border-radius: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -28,7 +28,7 @@
   cursor: pointer;
   transition: 0.4s ease-in;
   font-size: 2rem;
-  font-family: "Poppins Medium";
+  font-family: "Poppins";
   border-radius: 0.5rem;
   margin-left: 0.5rem;
 }

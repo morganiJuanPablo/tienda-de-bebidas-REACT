@@ -12,7 +12,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
-  font-family: "Poppins Medium";
+  font-family: "Poppins";
   font-size: 1.6rem;
   cursor: pointer;
   gap: 0.5rem;
@@ -37,7 +37,8 @@
   cursor: pointer;
   transition: 0.4s ease-in;
   font-size: 1.8rem;
-  font-family: "Poppins Medium";
+  font-family: "Poppins";
+  font-weight: 800;
   border-radius: 0.5rem;
   margin: 1rem auto 0 auto;
 }
